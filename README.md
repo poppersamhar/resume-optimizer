@@ -30,8 +30,8 @@ AI 驱动的简历分析与优化工具，帮助求职者针对目标职位优�
 ### 1. 克隆项目
 
 ```bash
-git clone https://github.com/poppersamhar/job-search-agent.git
-cd job-search-agent
+git clone https://github.com/poppersamhar/resume-optimizer.git
+cd resume-optimizer
 ```
 
 ### 2. 安装依赖
