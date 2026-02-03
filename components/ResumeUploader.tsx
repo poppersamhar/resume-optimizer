@@ -24,6 +24,12 @@ export default function ResumeUploader({
       return;
     }
 
+    // 检查文件大小 (4MB limit for Vercel)
+    if (file.size > 4 * 1024 * 1024) {
+      setError('文件大小不能超过 4MB，请压缩 PDF 后重试');
+      return;
+    }
+
     setIsLoading(true);
     setError(null);
 

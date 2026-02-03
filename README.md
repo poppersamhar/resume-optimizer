@@ -1,10 +1,14 @@
 # Resume Optimizer 简历优化器
 
+[![Live Demo](https://img.shields.io/badge/Demo-Live-brightgreen)](https://job-search-agent-sandy.vercel.app)
+
+**在线体验：** https://job-search-agent-sandy.vercel.app
+
 AI 驱动的简历分析与优化工具，帮助求职者针对目标职位优化简历。
 
 ## 功能特点
 
-- **PDF 简历解析**：支持中英文简历，自动提取结构化信息
+- **PDF 简历解析**：支持中英文简历，自动提取结构化信息（最大 4MB）
 - **AI 智能分析**：基于 DeepSeek 大模型进行简历评估
 - **A/B/C 评级系统**：
   - A (EXCELLENT): 优秀，问题极少
@@ -23,7 +27,7 @@ AI 驱动的简历分析与优化工具，帮助求职者针对目标职位优�
 
 - **前端**：Next.js 14, React, TypeScript, Tailwind CSS
 - **AI**：DeepSeek API
-- **PDF 处理**：pdf-parse, pdftotext, @react-pdf/renderer
+- **PDF 处理**：pdf-parse, @react-pdf/renderer
 
 ## 快速开始
 
@@ -48,17 +52,7 @@ npm install
 DEEPSEEK_API_KEY=your_deepseek_api_key
 ```
 
-### 4. 安装 pdftotext（可选，用于解析特殊 PDF）
-
-```bash
-# macOS
-brew install poppler
-
-# Ubuntu/Debian
-sudo apt-get install poppler-utils
-```
-
-### 5. 启动开发服务器
+### 4. 启动开发服务器
 
 ```bash
 npm run dev
